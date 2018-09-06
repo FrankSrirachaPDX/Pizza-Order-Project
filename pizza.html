@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+	<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+
+
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+    <title>Hello, world!</title>
+	</head>
+	<body>
+		<div id="fullMenu">
+			<h1>Build your Pizza!</h1>
+			
+				<h3>Size!</h3> <!--radio-->
+				<div class="menu">
+					<input class="size" type="radio" name="Size" value="Small" checked>Small <br>
+					<input class="size" type="radio" name="Size" value="Medium">Medium <br>
+					<input class="size" type="radio" name="Size" value="Large">Large <br>
+					<input class="size" type="radio" name="Size" value="Xtra Large">Xtra Large<br>
+				</div>
+			<br>
+				<h3>Meats!</h3> <!--checkboxes-->
+				<div class="menu">
+					<input class="meat" type="checkbox" name="Meat" value="Pepperoni" checked> Pepperoni
+					<input class="meat" type="checkbox" name="Meat" value="Sausage" > Sausage
+					<input class="meat" type="checkbox" name="Meat" value="Canadian Bacon"> Canadian Bacon
+					<br>
+					<input class="meat" type="checkbox" name="Meat" value="Ground Beef"> Ground Beef
+					<input class="meat" type="checkbox" name="Meat" value="Anchovy"> Anchovy
+					<input class="meat" type="checkbox" name="Meat" value="Chicken"> Chicken
+
+				</div>		
+				<!--Pepperoni, Sausage, Canadian Bacon, Ground Beef, Anchovy, and Chicken -->
+			<br>
+				<h3>Cheeses!</h3>	<!--radio-->
+				<div class="menu">
+					<input class="cheese" type="radio" name="Cheese" value="Regular" checked>Regular <br>
+					<input class="cheese" type="radio" name="Cheese" value="None">None <br>
+					<input class="cheese" type="radio" name="Cheese" value="Extra cheese">Extra <br>
+				</div>
+
+				<h3>Crusts!</h3>	<!--radio-->
+				<div class="menu">
+					<input class="crust" type="radio" name="Crust" value="Plain" checked>Plain<br>
+					<input class="crust" type="radio" name="Crust" value="Garlic Butter">Garlic Butter<br>
+					<input class="crust" type="radio" name="Crust" value="Cheese Stuffed">Cheese Stuffed<br>
+					<input class="crust" type="radio" name="Crust" value="Spicy">Spicy<br>
+					<input class="crust" type="radio" name="Crust" value="Special">Special<br>
+				</div>
+
+				<h3>Sauces!</h3>	<!--radio-->
+				<div class="menu">
+					<input class="sauce" type="radio" name="Sauce" value="Marinara" checked>Marinara<br>
+					<input class="sauce" type="radio" name="Sauce" value="White">White<br>
+					<input class="sauce" type="radio" name="Sauce" value="BBQ">BBQ<br>
+					<input class="sauce" type="radio" name="Sauce" value="No Sauce">No Sauce<br>
+				</div>
+
+
+				<h3>Veggies!</h3>	<!--checkboxes-->
+				<div class="menu">
+					<input class="veggies" type="checkbox" name="Veggies" value="Tomatoes" checked> Tomatoes
+					<input class="veggies" type="checkbox" name="Veggies" value="Onions"> Onions
+					<input class="veggies" type="checkbox" name="Veggies" value="Olives"> Olives
+					<br>
+					<input class="veggies" type="checkbox" name="Veggies" value="Green Peppers"> Green Peppers
+					<input class="veggies" type="checkbox" name="Veggies" value="Mushrooms"> Mushrooms
+					<input class="veggies" type="checkbox" name="Veggies" value="Pineapple"> Pineapple
+					<br>
+					<input class="veggies" type="checkbox" name="Veggies" value="Spinach"> Spinach
+					<input class="veggies" type="checkbox" name="Veggies" value="Jalapeno"> Jalapeno
+				</div>	
+			<br>
+			<br>
+
+	</div>
+	
+	<div class="button" >
+		<button type="button" class="btn btn-primary" onclick="getReceipt()">Place Order</button>
+	</div>
+	
+	<div id="cart">
+		<div id="title1"><h3>You Ordered:</h3></div>
+		<div id="title2"><h3>Subtotal:</h3></div>
+		<div id="showText1"></div>
+		<div id="showText2"></div>
+		<div id="grandTotal1"><h3>Total Price:</h3></div>
+		<div id="grandTotal2"></div>
+	</div>
+
+	
+		<!--JS-->
+	<script src="total.js"></script>
+	
+	
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	</body>
+</html>
